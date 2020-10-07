@@ -36,10 +36,22 @@ Do the following:
    HINT: no function required
 */
 
-let varOne = 1
-let varTwo = 2
+// let maidenName = 'Jordan Hanson'
+// let marriedName = 'Jordan Leavitt';
+let name = 'Jordan Hanson'
+let marriedName = 'Jordan Leavitt';
 
+let married = (name === marriedName) ? marriedName = 'Jordan Leavitt' : name = 'Jordan Hanson';
 
+console.log(married, "This is the current name")
+
+// if (maidenName === marriedName) {
+//   var newName = 'Jordan Leavitt';
+//   console.log(newName, "this is true statment")
+// } else {
+//   var 
+// }
+// console.log(newName);
 
 
 
