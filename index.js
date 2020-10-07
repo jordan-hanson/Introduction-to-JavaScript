@@ -18,19 +18,26 @@ Do the following:
    HINT: no function required
 */
 
-// const votingAge = 
-// test
+let votingAge = 20;
+
+let voter = (votingAge >= 18) ? "You can vote" : "You are not old enough";
+
+console.log(voter)
+
 
 /*
 Task 1b - Values
-
+ 
 Do the following:   
    1. Declare two variables and assign them values
    2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
    3. Return the new value of the 1st variable
-
+ 
    HINT: no function required
 */
+
+let varOne = 1
+let varTwo = 2
 
 
 
@@ -38,12 +45,12 @@ Do the following:
 
 /*
 Task 1c - Convert Strings to Numbers
-
+ 
 Do the following:   
    1. Declare a string type variable with the value of "1999"
    2. Convert the string value of "1999" to a integer value of 1999
    3. Return the result
-
+ 
    HINT: look up the Number method
 */
 
@@ -93,13 +100,13 @@ Use the hungryDog function and feeding requirements below to do the following:
   REMEMBER: This program should handle correctly adult AND puppy ages and weights
   
   Feeding Requirements:
-
+ 
   Adult Dogs 1 year and older 
      up to 5 lbs - 5% of their body weight
      6 - 10 lbs - 4% of their body weight 
      11 - 15 lbs - 3% of their body weight 
      > 15lbs - 2% of their body weight 
-
+ 
   Puppies less than 1 year
      2 - 4 months 10% of their body weight
      4 - 7 months 5% of their body weight 
@@ -120,7 +127,7 @@ function hungryDog(/*add your code here*/) {
 /*
 Create a global variable that randomly generates the computer's choice
 Use Math.random to determine the computers choice (Math.random gives a random number between 0 and 1)
-
+ 
 Use the game function below to do the following:
   1. Receive 2 parameters the user's choice and the computer's choice
   2. Return whether the user won, lost, or tied based on these rules of the game described below
@@ -189,7 +196,7 @@ function annoyingSong(/*add your code here*/) {
 Using the grade function below do the following: 
   1. Receive a score out of 100 
   2. Return the corresponding letter grade following this grade scale:
-
+ 
    90-100 = A 
    80-89 = B 
    70-79 = C 
@@ -212,7 +219,7 @@ function grade(/*add your code here*/) {
 Using the vowelCounter function below do the following:
   1. Receive a string as a parameter
   2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
-
+ 
   HINT - you may need to study tomorrow's content on arrays 
   HINT - try looking up the .includes() method
 */
