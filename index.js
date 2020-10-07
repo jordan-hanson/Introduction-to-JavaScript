@@ -65,7 +65,9 @@ Do the following:
  
    HINT: look up the Number method
 */
-
+let number = "1999";
+Number(number);
+console.log(number, "the number is now not a string")
 
 
 
