@@ -99,7 +99,7 @@ Do the following:
 // let dogYear = currentAge
 // let currentAge = i++
 let humanYears = 5
-var dogAge = 1;
+let dogAge = 1;
 console.log(dogAge, "This is the dog age")
 function dogYears(x) {
   // var dogAge = humanYears * 7
@@ -109,8 +109,11 @@ function dogYears(x) {
     //   for (i = 0; i < 10; i+=7){
 
     // }
+
   }
 }
+// console.log(dogYears(1))
+
 
 
 
@@ -141,10 +144,15 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */
 
-function hungryDog(/*add your code here*/) {
-  /*add your code here*/
+function hungryDog(weight, age) {
+  if (dog <= 1) {
+    //  block of code for adult dog
+  } else (dog > 1) {
+    // block of code for puppy 
+  }
 }
-
+var weight = hungryDog(3, 4)
+console.log(weight)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
