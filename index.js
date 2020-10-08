@@ -242,14 +242,17 @@ console.log(gameResult)
 Using the miles function below do the following:
   1. Receive a number of kilometers
   2. Convert the number of kiolmeters received to miles
-  3. Return the number of miles
+  3. Return the number of miles 
+  return km * 0.621371
 */
 
-function miles(/*add your code here*/) {
-  /*add your code here*/
+function miles(x) {
+  let milesResult = x * 0.621371
+  return milesResult;
 }
 
-
+var milesResult = miles(10)
+console.log(milesResult)
 
 //Task 5b - Feet to CM
 /*
