@@ -96,25 +96,14 @@ Do the following:
    2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
    3. Return the newly calculated age
 */
-// let dogYear = currentAge
-// let currentAge = i++
-let humanYears = 5
-let dogAge = 1;
-console.log(dogAge, "This is the dog age")
+
 function dogYears(x) {
-  // var dogAge = humanYears * 7
-
-  if (dogAge < 10) {
-    return dogAge = humanYears * 7
-    //   for (i = 0; i < 10; i+=7){
-
-    // }
-
-  }
+  let dogAge = x;
+  let humanYears = 7;
+  return dogYearAge = dogAge * humanYears
 }
-// console.log(dogYears(1))
-
-
+var dogYearAge = dogYears(4)
+console.log(dogYearAge)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -145,24 +134,36 @@ Use the hungryDog function and feeding requirements below to do the following:
 */
 
 function hungryDog(dogWeight, dogAge) {
-  if (dogAge <= 1) {
-    if (dogWeight > 5) {
+  if (dogAge >= 1) {
+    if (dogWeight <= 5) {
       return dogFoodWeight = dogWeight * .05
-    } else if (dogWeight <= 6 >= 10) {
+    } else if (dogWeight <= 10) {
       return dogFoodWeight = dogWeight * .04
-    } else if (dogWeight <= 11 >= 15) {
+    } else if (dogWeight <= 15) {
       return dogFoodWeight = dogWeight * .03
-    } else if (dogWeight <= 16) {
+    } else if (dogWeight >= 16) {
       return dogFoodWeight = dogWeight * .02
     }
     //  block of code for adult dog
-  } else if (dogAge > 1) {
-    if (dogAge)
+  } else if (dogAge < 1) {
+    if (dogAge <= .4) {
+      let puppyMonths = .33;
+      dogAge = puppyMonths
+      return dogFoodWeight = dogWeight * puppyMonths * .1;
+    } else if (dogAge <= .7) {
+      let puppyMonths = .66;
+      dogAge = puppyMonths
+      return dogFoodWeight = dogWeight * puppyMonths * .05;
+    } else if (dogAge <= .99) {
+      let puppyMonths = .99;
+      dogAge = puppyMonths
+      return dogFoodWeight = dogWeight * puppyMonths * .04
+    }
     // block of code for puppy 
   }
 }
-var weight = hungryDog(3, 4)
-console.log(weight)
+var dogFoodWeight = hungryDog(.3, 1)
+console.log(dogFoodWeight)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
