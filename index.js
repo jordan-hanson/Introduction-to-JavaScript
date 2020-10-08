@@ -162,7 +162,7 @@ function hungryDog(dogWeight, dogAge) {
     // block of code for puppy 
   }
 }
-var dogFoodWeight = hungryDog(.3, 1)
+var dogFoodWeight = hungryDog(15, 1)
 console.log(dogFoodWeight)
 
 
@@ -182,11 +182,57 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(/*add your code here*/) {
-  /*add your code here*/
+function game(userSubmission, computerSubmission) {
+  if (userSubmission === "scissors" && computerSubmission === "scissors") {
+    return "it's a tie"
+  } else if (userSubmission === "rock" && computerSubmission === "rock") {
+    return "it's a tie"
+  } else if (userSubmission === "paper" && computerSubmission === "paper") {
+    return "it's a tie"
+  } else if (userSubmission === "scissors" && computerSubmission === "paper") {
+    return "you win!"
+  } else if (userSubmission === "paper" && computerSubmission === "scissors") {
+    return "you lose!"
+  } else if (userSubmission === "paper" && computerSubmission === "rock") {
+    return "you win!"
+  } else if (userSubmission === "rock" && computerSubmission === "paper") {
+    return "you lose!"
+  } else if (userSubmission === "rock" && computerSubmission === "scissors") {
+    return "you win!"
+  } else if (userSubmission === "scissors" && computerSubmission === "rock") {
+    return "you lose!"
+  }
 }
 
+function userResult() {
+  userSubmission = Math.floor(Math.random() * 3)
 
+  if (userSubmission === 0) {
+    return userSubmission = "scissors"
+  } else if (userSubmission === 1) {
+    return userSubmission = "rock"
+  } else if (userSubmission === 2) {
+    return userSubmission = "paper"
+  }
+}
+function computerResult() {
+  computerSubmission = Math.floor(Math.random() * 3)
+  if (computerSubmission === 0) {
+    return computerSubmission = "scissors"
+  } else if (computerSubmission === 1) {
+    return computerSubmission = "rock"
+  } else if (computerSubmission === 2) {
+    return computerSubmission = "paper"
+  }
+}
+var userSubmission = userResult();
+console.log(userSubmission, "This is the user random")
+
+var computerSubmission = computerResult();
+console.log(computerSubmission, "This is the computer random")
+
+var gameResult = game(userSubmission, computerSubmission)
+console.log(gameResult)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
