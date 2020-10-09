@@ -262,11 +262,13 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/) {
-  /*add your code here*/
+function feet(x) {
+  let feetResult = x / 30.48
+  return feetResult;
 }
 
-
+var feetResult = feet(10)
+console.log(feetResult)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -278,10 +280,18 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/) {
+function annoyingSong(number) {
+  // let countDownNumber = number;
+  let songLeft = number - 1;
+  let songIteration = number + " bottles of soda on the wall, " + number + " bottles of soda, take one down pass it around " + songLeft + " bottles of soda on the wall";
+  console.log(songIteration, "This is my iteration")
+  let endSong = songLeft === 0;
+  console.log(endSong, "this is the end")
+  return songIteration;
   /*add your code here*/
 }
-
+var songResult = annoyingSong(5)
+console.log(songResult)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -298,13 +308,22 @@ Using the grade function below do the following:
    below 60 = F
 */
 
-function grade(/*add your code here*/) {
-  /*add your code here*/
+function grade(x) {
+  if (x >= 90) {
+    return "you got a A"
+  } else if (x >= 80) {
+    return "you got a B"
+  } else if (x >= 70) {
+    return "you got a C"
+  } else if (x >= 60) {
+    return "you got a D"
+  } else if (x < 60) {
+    return "you got a F"
+  }
 }
 
-
-
-
+var finalGrade = grade(85)
+console.log(finalGrade)
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -319,9 +338,9 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
-}
+// function vowelCounter(/*add your code here*/) {
+//   /*add your code here*/
+// }
 
 
 
